@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		0D96BF1C60A94438498AF290 /* Pods_LGWebImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGWebImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1346820D30691EE985DDDC20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1346820D30691EE985DDDC20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		22B21D7CA33970275C635CE7 /* Pods-LGWebImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGWebImage_Example.release.xcconfig"; path = "Target Support Files/Pods-LGWebImage_Example/Pods-LGWebImage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		32C44598525F934969FE5A1F /* LGWebImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LGWebImage.podspec; path = ../LGWebImage.podspec; sourceTree = "<group>"; };
+		32C44598525F934969FE5A1F /* LGWebImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LGWebImage.podspec; path = ../LGWebImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		57E18BB3D3C284AEE3378A4A /* Pods-LGWebImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGWebImage_Tests.release.xcconfig"; path = "Target Support Files/Pods-LGWebImage_Tests/Pods-LGWebImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LGWebImage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGWebImage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7187C54F89EE387C3396993D /* Pods-LGWebImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGWebImage_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LGWebImage_Tests/Pods-LGWebImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7C26B5ABA5AA14F28CF1E6F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7C26B5ABA5AA14F28CF1E6F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1B2F60A66B1980883F6589F /* Pods_LGWebImage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGWebImage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E99B954E8A2D05247E7C19 /* Pods-LGWebImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGWebImage_Example.debug.xcconfig"; path = "Target Support Files/Pods-LGWebImage_Example/Pods-LGWebImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				7187C54F89EE387C3396993D /* Pods-LGWebImage_Tests.debug.xcconfig */,
 				57E18BB3D3C284AEE3378A4A /* Pods-LGWebImage_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -304,10 +304,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LGWebImage_Example/Pods-LGWebImage_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LGWebImage/LGWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

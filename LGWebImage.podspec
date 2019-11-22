@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LGWebImage'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LGWebImage.'
+  s.summary          = '基于SDWebImage的封装，支持切圆角'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,13 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+基于SDWebImage的封装，支持切圆角
+支持自定义处理图片
+走sd缓存流程
                        DESC
 
   s.homepage         = 'https://github.com/lizhixing/LGWebImage'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lizhixing' => 'lizhixing@dangdang.com' }
+  s.author           = { 'lizhixing' => '740157759@qq.com' }
   s.source           = { :git => 'https://github.com/lizhixing/LGWebImage.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -38,5 +40,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SDWebImage'
 end

@@ -1,0 +1,6 @@
+framework module Pods_LGWebImage_Tests {
+  umbrella header "Pods-LGWebImage_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

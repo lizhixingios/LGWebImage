@@ -1,0 +1,6 @@
+framework module LGWebImage {
+  umbrella header "LGWebImage-umbrella.h"
+
+  export *
+  module * { export * }
+}
